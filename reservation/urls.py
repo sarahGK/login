@@ -7,5 +7,5 @@ from .views import index
 app_name = 'reservation'
 urlpatterns = [
     url(r'^$',index,name='index'),
- #   url(r'^(?P<id>[0-9]+)/results/$',results,name='results')
+    url(r'^(?P<id>[0-9]+)/results/$',results,name='results') #TODO: Show the reservation 
 ]
