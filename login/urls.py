@@ -1,3 +1,4 @@
+# for different url requests, direct to different pages 
 from django.conf.urls import patterns, include, url
 from login.views import *
 
