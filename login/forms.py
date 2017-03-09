@@ -5,8 +5,7 @@ from login.models import *
 # while ugettext will be newly executed (for views and similar function calls)
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ObjectDoesNotExist
-#use twilio to verify the phone number 
-# First, Store "TWILIO_ACCOUNT_SID" and "TWILIO_AUTH_TOKEN" in the environment variables
+# use twilio to verify the phone number and First need to Store "TWILIO_ACCOUNT_SID" and "TWILIO_AUTH_TOKEN" in the environment variables
 
 class RegistrationForm(forms.Form):
 
@@ -22,7 +21,7 @@ class RegistrationForm(forms.Form):
       except User.DoesNotExist:
           return self.cleaned_data['user_id']
       raise forms.ValidationError(_("The user id already exists. Please try another one."))
- 
+      
   def clean(self):
 
     cleaned_data = super(RegistrationForm,self).clean()
