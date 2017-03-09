@@ -6,10 +6,8 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from .models import *
 
-
 # Create your views here.
 
- 
 @transaction.atomic
 def register(request):
     if request.method == 'POST':
