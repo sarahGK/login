@@ -1,7 +1,9 @@
 This is a Django login app connet to a PostgreSQL instance on AWS
 
 1.login: let user to register and login 
+
 2.reservation: save reservation information into database
+
 3.streetparking/settings:all the settings for apps and connecting to database on AWS
 
 #----Useful command---#
