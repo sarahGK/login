@@ -1,6 +1,8 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect
+# avoid having to hardcode a URL in the view function
 from django.core.urlresolvers import reverse
+# for static pages or listing pages,use generic views classes 
 from django.views import generic
 
 from .models import Spot,Reservation
