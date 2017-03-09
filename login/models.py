@@ -1,6 +1,6 @@
 
 '''
-This file is to define the model for User to registration and login.
+This file is to define the model for user to registration and login.
 New users create a new account using their email address, set up a password, and set up their phone number.
 Registered user can use profile to login.
 
@@ -23,7 +23,7 @@ class Profile(models.Model):
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender,instance,created,**kwargs):
-  if created:
+    if ceated:
     Profile.objects.create(user=instance)
 
 @receiver(post_save, sender=User)
