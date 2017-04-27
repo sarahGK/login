@@ -8,7 +8,7 @@ This is a Django login app connet to a PostgreSQL instance on AWS
 
 #----Useful command---#
 1.connect to DB instance on AWS locally:
-psql --host=xpostgres.c1nvk5oppivu.us-west-1.rds.amazonaws.com --port=5432 --username=xin —password --dbname=ridecell    'PASSWORD': 'tMrWDk3N'
+psql --host=xpostgres.c1nvk5oppivu.us-west-1.rds.amazonaws.com --port=5432 --username=xin —password --dbname=mydb    'PASSWORD': 'tMrWDk3N'
 
 2.starts the development server on the internal IP at port 8000:
 python manage.py runserver 0.0.0.0:8000
